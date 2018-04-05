@@ -1,1 +1,29 @@
-Problem Statement
+Problem Statement:
+
+1-length.py:
+
+PySpark program to examine the average length of comments (column: ReviewContent) in each rating (column: ReviewRating). 
+We have 5 levels of rating here where 1 star rating represents the worst experience and the 5 star rating represents the best 
+experience. 
+
+
+2-wordranking.py:
+
+PySpark program to pick up the top 10 words for each rating. Some of the words such as ”great”, ”good” are more common in 5 star 
+rating comments than the 1 star rating comments, printing out the top 10 common words for each rating comments like follows:
+
+
+
+Data Used:
+
+Amazon reviews data:
+The columns are named and organized in the following manner: ProductID, ReviewID, ReviewTitle, ReviewTime, Veriﬁed, ReviewContent, 
+ReviewRating seperated by ”∧”.
+
+Sample Data:
+
+1^1^These are hands down the best quality bands for the money^2016-01-16^false^ These are hands down the best quality bands for the money. I am a 38 year old male and wanted a resistance band set that I could travel with as well as use it at home with my p90 workouts. I specifically wanted bands that were made with high quality material and would not break after a few months. After months of research I pulled the trigger and bought Black Mountain resistance band set. These bands met all of my expectations and more. They are high quality and multiple bands can be combined for added resistance. The travel bag makes it easy to travel with since I am always on the go. My wife always really liked them and we ordered a second set to replace her flimsy less quality bands. Thanks Black Mountain for producing a great product at a fraction of what other competitors are selling them for.^5.00
+1^2^High Quality Bands^2016-01-22^false^ I just got this set yesterday as well as a set from another company so I could compare the quality. The other set seems to be made pretty well, but these from Black Mountain are higher quality. The nylon webbing and hardware are heavier and have an overall better quality look. I\ve been using resistance bands for years. Not as my sole resistance routine, but to suppliment my exercise machines and free weights. Everyone that exercises should give bands a try if they haven\t as they are very effective. As these eventually wear out as they all do in time, I\ll replace them with Black Mountain products again. My only complaint is there is a slip of paper that came with the bands offering me a free orange band, but the phone number given doesn\t seem to connect to anything.^5.00
+1^3^Five Stars^2015-12-27^false^ My husband uses these and finds them to be good for his arthritis stretching exercises^5.00
+1^4^The resistance is great. I would agree that the low resistance is ...^2016-01-13^false^ I got these for Christmas and have been using them multiple days a week since. The resistance is great. I would agree that the low resistance is pretty worthless but maybe some use it?? I was a little skeptical about the customer service given the review but I called to inquire about these before purchase and they answered right away which gave me a little more confidence. So far so good, I will let you know if there are any issues with the bands themselves after continue usage between 3-4x/wk.^4.00
+1^5^Good quality product^2016-01-20^false^ Haven\t had it long enough to use all of the components but so far I\m impressed with the quality of the material. I also really like the fact that you can remove and mix/match the bands using the hooks on each end. All in all, so far so good, and they do what they\re meant to do. Will update once I can try the other exercise positions using the door anchor.^5.00
